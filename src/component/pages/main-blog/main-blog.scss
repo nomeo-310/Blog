@@ -1,0 +1,28 @@
+.main-blog {
+   .container {
+    padding: 40px 0;
+    display: flex;
+    gap: 35px;
+    .blog-area {
+        width: 70%;
+    }
+    .blog-side-bar {
+        width: 30%;
+    }
+   } 
+}
+@media (max-width: 600px) {
+    .main-blog {
+        .container {
+         display: flex;
+         flex-direction: column;
+         gap: 35px;
+         .blog-area {
+             width: 100%;
+         }
+         .blog-side-bar {
+             width: 100%;
+         }
+        } 
+     } 
+}

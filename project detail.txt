@@ -1,0 +1,7 @@
+project_no: 41,
+project_tag: blog_ site,
+issues: the registration [it wasn't designed],
+responsivenes: only to 600px,
+milestone crossed: i cannow route between pages and it start from top, 
+			dark mode and light mode and i can search through post. 
+			i made a better experience compared to the project_39

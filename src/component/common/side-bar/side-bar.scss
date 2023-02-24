@@ -1,0 +1,252 @@
+.side-bar {
+    padding: 25px;
+    border: 1px solid #ccc;
+    background: rgba(225, 225, 225, 0.3);
+    .post-author {
+        border-bottom: 1px solid #ccc;
+        padding: 20px 0;
+        margin-bottom: 25px;
+        text-align: center;
+        .author-image {
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 10px auto;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+        h2 {
+            text-transform: capitalize;
+            font-size: 17px;
+            margin-bottom: 5px;
+        }
+        h3 {
+            text-transform: capitalize;
+            font-weight: 400;
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+        .media-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            i {
+                font-size: 15px;
+            }
+            i:hover {
+                color: #3bacf0;
+                font-size: 17px;
+            }
+        }
+        .text {
+            p {
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+    }
+    .popular-post {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 25px;
+        h2 {
+            text-align: center;
+            text-transform: capitalize;
+            padding: 8px 0;
+            background: #3bacf0;
+            color: #fff;
+        }
+        .post-list {
+            display: flex;
+            flex-direction: column;
+            margin: 15px 0;
+            gap: 15px;
+            .post {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                .post-image {
+                    flex: 1;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .post-detail {
+                    flex: 2;
+                    h3 {
+                        text-transform: capitalize;
+                        font-size: 16px;
+                        margin-bottom: 5px;
+                    }
+                    h4 {
+                        font-weight: 400;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .advert {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 25px;
+        padding-bottom: 20px;
+        img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        h2 {
+            text-transform: capitalize;
+            font-weight: 400;
+            font-size: 18px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+    .categories {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 25px;
+        h2 {
+            text-align: center;
+            text-transform: capitalize;
+            padding: 8px 0;
+            background: #3bacf0;
+            color: #fff;
+        }
+        .categories-list {
+            margin: 20px 0;
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 2px dotted #ccc;
+                padding: 8px 0;
+                cursor: pointer;
+                h3 {
+                    font-weight: 400;
+                    text-transform: capitalize;
+                }
+            }
+            li:hover {
+                border-bottom: 3px dotted #3bacf0;
+                h3 {
+                    color: #3bacf0;
+                    scale: 1.1;
+                    transform: translateX(3px);
+                }
+                span {
+                    color: #3bacf0;
+                    scale: 1.1;
+                }
+            }
+            li:last-child {
+                border-bottom: none;  
+            }
+        }  
+    }
+    .news-letter {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 25px;
+        h2 {
+            text-align: center;
+            text-transform: capitalize;
+            padding: 8px 0;
+            background: #3bacf0;
+            color: #fff;
+        }
+        .news-letter-content {
+            margin: 20px 0;
+            p {
+                font-size: 15px;
+            }
+            p:last-child {
+                text-align: center;
+            }
+            form {
+                margin: 10px 0;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                .input {
+                    width: calc(100% - 90px);
+                    height: 100%;
+                    position: relative;
+                    input {
+                        width: 100%;
+                        height: 100%;
+                        padding: 10px 0 10px 35px;
+                        outline: none;
+                        border: 1px solid #ccc;
+                        border-right: none;
+                    }
+                    input::placeholder {
+                        text-transform: capitalize;
+                        font-size: 14px;
+                    }
+                    i {
+                        position: absolute;
+                        left: 10px;
+                        top: 12px;
+                        font-size: 17px;
+                    }
+                }
+                button {
+                    width: 90px;
+                    height: 100%;
+                    border: none;
+                    outline: none;
+                    background: #3bacf0;
+                    text-transform: capitalize;
+                    color: #fff;
+                    font-size: 16px;
+                }
+            }
+        }  
+    }
+    .tag-cloud {
+        cursor: pointer;
+        h2 {
+            text-align: center;
+            text-transform: capitalize;
+            padding: 8px 0;
+            background: #3bacf0;
+            color: #fff;
+        }
+        .tag-list {
+            margin: 20px 0 0 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            li {
+                border: 1px solid #ccc;
+                padding: 4px;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+.dark .side-bar {
+    background: none;
+    .post-author {
+        i {
+            color: #fff;
+        }
+    }
+    .categories {
+        .categories-list {
+            span {
+                color: #fff;
+            }
+        }
+    }
+    .tag-cloud {
+        .tag-list {
+            li {
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+.comment-form {
+    margin: 40px 0 30px 0;
+    border: 1px solid #ccc;
+    padding: 0 30px 30px 30px;
+    background: rgba(225, 225, 225, 0.2);
+    h2 {
+        font-weight: 400;
+        text-transform: capitalize;
+        text-align: center;
+        margin: 30px 0;
+    }
+    .form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        input {
+            padding: 10px 15px;
+            font-size: 15px;
+            outline: none;
+            border: 1px solid #ccc;
+        }
+        input::placeholder {
+            text-transform: capitalize;
+            font-size: 16px;
+        }
+        .input {
+            display: flex;
+            gap: 20px;
+            input {
+                width: calc(50% - 10px);
+            }
+        }
+        .subject {
+            width: 100%;
+            input {
+                width: 100%;
+            }
+        }
+        .text-area {
+            width: 100%;
+            textarea {
+                width: 100%;
+                height: 230px;
+                resize: none;
+                padding: 10px 15px;
+                outline: none;
+                font-size: 16px;
+                border: 1px solid #ccc;
+            }
+            textarea::placeholder {
+                text-transform: capitalize;
+                font-size: 16px;
+            }
+        }
+        .submit-button {
+            margin-top: 15px;
+            button {
+                padding: 12px 25px;
+                text-transform: capitalize;
+                outline: none;
+                border: none;
+                font-size: 16px;
+                color: #fff;
+                background: #3bacf0;
+                cursor: pointer;
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    .comment-form {
+        padding: 0 20px 20px 20px;
+        .form {
+            input::placeholder {
+                font-size: 15px;
+            }
+            .text-area {
+                width: 100%;
+                textarea {
+                    height: 170px;
+                    font-size: 15px;
+                }
+                textarea::placeholder {
+                    font-size: 15px;
+                }
+            }
+            .submit-button {
+                margin-top: 15px;
+                button {
+                    font-size: 15px;
+                }
+            }
+        }
+    }  
+}

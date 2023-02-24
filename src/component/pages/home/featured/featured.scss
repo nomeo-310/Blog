@@ -1,0 +1,48 @@
+.featured {
+    display: flex;
+    padding: 30px 0;
+    gap: 20px;
+    .left {
+        flex: 70%;
+        .pagination {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            gap: 8px;
+            text-transform: capitalize;
+            .page-num {
+                padding: 6px 11px;
+                cursor: pointer;
+            }
+            .prev,
+            .next {
+                padding: 6px 11px;
+            }
+            .active-num {
+                padding: 6px 0;
+                background: #148fde;
+                color: #fff;
+                border-radius: 25px;
+            }
+        }
+    }
+    .right {
+        flex:30%;
+    }
+};
+@media (max-width: 600px) {
+    .featured {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0;
+        gap: 20px;
+        .left {
+            flex: 70%;
+        }
+        .right {
+            flex:30%;
+        }
+    }  
+}

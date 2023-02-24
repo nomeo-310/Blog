@@ -1,0 +1,86 @@
+@font-face {
+    font-family: SignikaNegative-Bold;
+    src: url(./font/SignikaNegative-Bold.ttf);
+}
+@font-face {
+    font-family: SignikaNegative-Light;
+    src: url(./font/SignikaNegative-Light.ttf)
+}
+@font-face {
+    font-family: SignikaNegative-Medium;
+    src: url(./font/SignikaNegative-Medium.ttf)
+}
+@font-face {
+    font-family: SignikaNegative-Regular;
+    src: url(./font/SignikaNegative-Regular.ttf)
+}
+@font-face {
+    font-family: SignikaNegative-SemiBold;
+    src: url(./font/SignikaNegative-SemiBold.ttf)
+}
+@font-face {
+    font-family: Urbanist-Regular;
+    src: url(./font/Urbanist-Regular.ttf)
+}
+@font-face {
+    font-family: Urbanist-Medium;
+    src: url(./font/Urbanist-Medium.ttf)
+}
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Urbanist-Regular';
+    // transition: all 0.5s linear;
+}body.dark {
+    background: #39393a;
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+        color: #fff;
+    }
+}
+.app{
+   .link {
+        text-decoration: none;
+        color: inherit;
+        outline: none;
+   }
+   .container {
+    width: 88%;
+    margin: 0 auto;
+   }
+}
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 1rem;
+    font-family: 'Urbanist-Regular';
+}
+html::-webkit-scrollbar,
+.chat-corner::-webkit-scrollbar,
+.bottom::-webkit-scrollbar {
+    width: 0.5rem;
+}
+html::-webkit-scrollbar-thumb,
+.chat-corner::-webkit-scrollbar-thumb,
+.bottom::-webkit-scrollbar-thumb {
+    border-radius: 5rem;
+    background: #3bacf0;
+    transition: all 0.5s ease-in-out;
+}
+html::-webkit-scrollbar-thumb:hover,
+.chat-corner::-webkit-scrollbar-thumb:hover,
+.bottom::-webkit-scrollbar-thumb:hover {
+    background: #148fde;
+}
+html::-webkit-scrollbar-track,
+.chat-corner::-webkit-scrollbar-track,
+.bottom::-webkit-scrollbar-track {
+    background: transparent;
+}

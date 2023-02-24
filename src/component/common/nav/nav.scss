@@ -1,0 +1,139 @@
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    padding: 15px 40px 25px 40px;
+    color: #fff;
+    font-family: 'Urbanist-Regular';
+    z-index: 120;
+    .link {
+        text-transform: capitalize;
+    }
+    .left {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .brand-name {
+            font-size: 25px;
+        }
+    }
+    .center {
+        flex: 4;
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        .item {
+            font-size: 17px;
+        }
+    }
+    .right {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        cursor: pointer;
+    }
+    .mode-toggler {
+        position: absolute;
+        right: 0;
+        top: 14px;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        background: #fff;
+        cursor: pointer;
+        div {
+            width: 25px;
+            height: 25px;
+            margin: 5px;
+            margin-right: 10px;
+        }
+        .light-mode {
+            background: url(../nav/moon.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .dark-mode {
+            background: url(../nav/lightbulb-on.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    .mobile-menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        .top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            a {
+                font-size: 20px;
+                flex: 5;
+            }
+            .middle {
+                flex: 1;
+                margin-right: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+        .menu {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+.nav.fixed {
+    position: fixed;
+    width: 100%;
+    top: -65px;
+    left: 0;
+    right: 0;
+    background: #3bacf0;
+    transform: translateY(65px);
+    transition: transform 500ms ease, background 500ms ease;
+    -webkit-transition: transform 500ms ease, background 500ms ease;
+}
+@media (max-width: 600px) {
+    .nav {
+        height: 90px;
+        padding: 10px;
+        .link {
+            text-transform: capitalize;
+        }
+        .left {
+            display: none;
+        }
+        .center {
+            display: none;
+        }
+        .right {
+            display: none;
+        }
+        .mode-toggler {
+            position: absolute;
+            right: 0;
+            top: 0;
+            div {
+                width: 15px;
+                height: 15px;
+            }
+        }
+        .mobile-menu {
+            display: flex;
+            cursor: pointer;
+        }
+    } 
+}
